@@ -14,7 +14,7 @@ module.exports = {
     // 代理列表, 是否开启代理通过[./dev.env.js]配置
     proxyTable: devEnv.OPEN_PROXY === false ? {} : {
       '/proxyApi': {
-        target: 'http://demo.renren.io/renren-fast-server/', //http://121.196.192.110:8098/firman/  http://demo.renren.io/renren-fast-server/
+        target: 'http://121.196.192.110:8098/firman/', //http://121.196.192.110:8098/firman/  http://demo.renren.io/renren-fast-server/
         changeOrigin: true,
         pathRewrite: {
           '^/proxyApi': '/'
@@ -24,7 +24,7 @@ module.exports = {
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8002, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8001, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
